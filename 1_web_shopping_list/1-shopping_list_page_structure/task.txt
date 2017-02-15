@@ -1,0 +1,4 @@
+Vytvoření webové stránky pro nákupní seznam
+===========================================
+
+5. Abychom viděli případné chybové výpisy, které se nám mohou během vývoje hodit, máme ve stránce na prvních řádcích nastavení pro zobrazování chyb a funkci pro
