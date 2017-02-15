@@ -12,6 +12,7 @@ if (!isset($_SESSION['shopping_list'])) {
     <head></head>
     <body>
     <h1>Nákupní seznam</h1>
+    <div>Toto je můj nákupní seznam z mých oblíbených obchodů.</div>
     <div>
         <div>
             <h2>Přidání nové položky</h2>
@@ -31,7 +32,7 @@ if (!isset($_SESSION['shopping_list'])) {
                     <input type="number" name="quantity" id="quantity" required />
                     <br>
                     <label for="price">Cena</label>
-                    <input type="number" name="price" step="0.01" min="0" max="1000000" required /> Kč
+                    <input type="number" name="price" id="price" step="0.01" min="0" max="1000000" required /> Kč
                     <br>
                     <input type="submit" name="add" value="Přidat" />
                 </form>
@@ -49,24 +50,10 @@ if (!isset($_SESSION['shopping_list'])) {
             }
             ?>
         </div>
+
         <h2>Seznam položek</h2>
         <div>
-            <table>
-                <thead>
-                <tr>
-                    <th>Název</th>
-                    <th>Obchod</th>
-                    <th>Množství</th>
-                    <th>Cena</th>
-                </tr>
-                </thead>
-                <tbody>
-                <?php
-                // $shoppingItems = $_SESSION['shopping_list'];
-                // <tr><td>Název</td><td>Obchod</td><td>Množství</td><td>Cena</td></tr>
-                ?>
-                </tbody>
-            </table>
+            <?php var_dump($_SESSION['shopping_list']); ?>
         </div>
     </div>
     </body>

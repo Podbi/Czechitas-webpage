@@ -7,6 +7,7 @@ error_reporting(E_ALL);
     <head></head>
     <body>
     <h1>Nákupní seznam</h1>
+    <div>Toto je můj nákupní seznam z mých oblíbených obchodů.</div>
     <div>
         <div>
             <h2>Přidání nové položky</h2>
@@ -26,17 +27,11 @@ error_reporting(E_ALL);
                     <input type="number" name="quantity" id="quantity" required />
                     <br>
                     <label for="price">Cena</label>
-                    <input type="number" name="price" step="0.01" min="0" max="1000000" required /> Kč
+                    <input type="number" name="price" id="price" step="0.01" min="0" max="1000000" required /> Kč
                     <br>
                     <input type="submit" name="add" value="Přidat" />
                 </form>
             </div>
-            <?php
-            //$submitButton = $_GET['add'];
-            //$title = $_GET['title'];
-            //$store = $_GET['store'];
-            //echo "<strong>Toto je naše nově přidaná položka. :-)</strong><br>";
-            ?>
         </div>
     </div>
     </body>

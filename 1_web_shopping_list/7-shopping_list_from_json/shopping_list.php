@@ -12,6 +12,7 @@ if (!isset($_SESSION['shopping_list'])) {
     <head></head>
     <body>
     <h1>Nákupní seznam</h1>
+    <div>Toto je můj nákupní seznam z mých oblíbených obchodů.</div>
     <div>
         <div>
             <h2>Přidání nové položky</h2>
@@ -25,13 +26,17 @@ if (!isset($_SESSION['shopping_list'])) {
                         <option value="marks&spencer">Marks & Spencer</option>
                         <option value="c&a">C&A</option>
                         <option value="esprit">Esprit</option>
+                        <?php
+                            //$fileContent = file_get_contents('stores.json');
+                            //$stores = json_decode($fileContent, true);
+                        ?>
                     </select>
                     <br>
                     <label for="quantity">Množství</label>
                     <input type="number" name="quantity" id="quantity" required />
                     <br>
                     <label for="price">Cena</label>
-                    <input type="number" name="price" step="0.01" min="0" max="1000000" required /> Kč
+                    <input type="number" name="price" id="price" step="0.01" min="0" max="1000000" required /> Kč
                     <br>
                     <input type="submit" name="add" value="Přidat" />
                 </form>
@@ -76,16 +81,16 @@ if (!isset($_SESSION['shopping_list'])) {
                 }
                 ?>
                 </tbody>
-                <tfooter>
+                <tfoot>
                     <tr>
                         <th colspan="3">Celková cena položek</th>
                         <th>
                             <?php echo $totalPrice; ?> Kč
                         </th>
                     </tr>
-                </tfooter>
+                </tfoot>
             </table>
         </div>
     </div>
     </body>
-    </html>
+</html>
