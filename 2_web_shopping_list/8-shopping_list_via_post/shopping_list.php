@@ -47,6 +47,7 @@ if (!isset($_SESSION['shopping_list'])) {
                 </form>
             </div>
             <?php
+            // $_POST namísto $_GET
             if (isset($_GET['add'])) {
                 $shoppingItem = [];
                 $shoppingItem['title'] = $_GET['title'];

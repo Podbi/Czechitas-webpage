@@ -22,12 +22,6 @@ error_reporting(E_ALL);
                     <input type="submit" name="add" value="Přidat" />
                 </form>
             </div>
-            <?php
-            //$submitButton = $_GET['add'];
-            //$title = $_GET['title'];
-            //$store = $_GET['store'];
-            //echo "<strong>Toto je naše nově přidaná položka. :-)</strong><br>";
-            ?>
         </div>
     </div>
     </body>
