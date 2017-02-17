@@ -2,8 +2,8 @@
 
 $pages = [
     'index' => 'Domů',
-    'shopping-list' => 'Nákupní seznam',
-    'products' => 'Produkty'
+    'shopping_list' => 'Nákupní seznam',
+    'stores_management' => 'Obchody'
 ];
 
 ?>

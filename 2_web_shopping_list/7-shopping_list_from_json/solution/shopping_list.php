@@ -62,8 +62,7 @@ if (!isset($_SESSION['shopping_list'])) {
                             <select name="store" class="form-control" id="store">
                                 <option value="" selected disabled>Vyber Obchod</option>
                                 <?php
-                                $fileContent = file_get_contents('./stores.json');
-                                $stores = json_decode($fileContent, true);
+                                $stores = loadData('./data/stores.json');
                                 foreach ($stores as $store) {
                                     echo sprintf(
                                         '<option value="%s">%s</option>',

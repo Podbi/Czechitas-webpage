@@ -47,9 +47,9 @@
             <ul class="nav navbar-nav navbar-right"><li>
                 <a href='index.php'>Domů</a>
             </li><li>
-                <a href='shopping-list.php'>Nákupní seznam</a>
+                <a href='shopping_list.php'>Nákupní seznam</a>
             </li><li>
-                <a href='products.php'>Produkty</a>
+                <a href='stores_management.php'>Obchody</a>
             </li></ul>        </div>
     </div>
 </nav>
