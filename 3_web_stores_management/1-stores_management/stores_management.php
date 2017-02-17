@@ -5,8 +5,7 @@ error_reporting(E_ALL);
 
 include_once 'functions.php';
 
-//Získej obsah souboru "stores.json"
-//Převeď obsah souboru z JSON na asociativní pole v PHP
+//Získej obsah souboru "./data/stores.json" pomocí funkce "loadData"
 //Ulož si převedený obsah souboru (seznam obchodů) do proměnné
 ?>
 
@@ -67,12 +66,11 @@ include_once 'functions.php';
                     </form>
                 </div>
                 <?php
-                //Zpracuj formulář pomocí metody POST
-                //Zkontroluj, zda byl odeslán pomocí podmínky
-                //Získej hodnoty formuláře, které Tě zajímají - "id" a "name"
-                //Přidej nový obchod do proměnné pro obchody, kterou sis vytvořiola výše
-                //Převeď obsah proměnné s obchody na JSON. To jsme ještě nezkoušeli, používá se funkce json_encode.
-                //Ulož si převedený JSON do souboru "./stores.json". Tento krok je taky novinka. K zápisu do souboru se Ti bude hodit file_put_contents($fileName, $fileContent)
+                //Zpracuj formulář pomocí metody POST.
+                //Zkontroluj, zda byl odeslán pomocí podmínky.
+                //Získej hodnoty formuláře, které Tě zajímají - "id" a "name".
+                //Přidej nový obchod do proměnné pro obchody, kterou sis vytvořiola výše.
+                //Ulož si převedený JSON do souboru "./data/stores.json" pomocí Tvé funkce "saveData".
                 ?>
             </div>
         </div>

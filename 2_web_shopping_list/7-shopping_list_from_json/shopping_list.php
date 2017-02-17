@@ -65,8 +65,7 @@ if (!isset($_SESSION['shopping_list'])) {
                                 <option value="c&a">C&A</option>
                                 <option value="esprit">Esprit</option>
                                 <?php
-                                //$fileContent = file_get_contents('stores.json');
-                                //$stores = json_decode($fileContent, true);
+                                //$stores = loadData('./data/stores.json');
                                 ?>
                             </select>
                             <p class="help-block text-danger"></p>

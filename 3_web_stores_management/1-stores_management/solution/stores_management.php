@@ -5,8 +5,7 @@ error_reporting(E_ALL);
 
 include_once 'functions.php';
 
-$fileContent = file_get_contents('./stores.json');
-$stores = json_decode($fileContent, true);
+$stores = loadData('./data/stores.json');
 ?>
 
 <!DOCTYPE html>
@@ -72,8 +71,7 @@ $stores = json_decode($fileContent, true);
                     $store['name'] = $_POST['name'];
 
                     $stores[] = $store;
-                    $json = json_encode($stores);
-                    file_put_contents('./stores.json', $json);
+                    saveData('./data/stores.json', $stores);
 
                     echo '<div class="alert alert-success">Obchod byl úspěšně přidán. :-)</div>';
                 }
