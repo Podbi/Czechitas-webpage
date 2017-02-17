@@ -44,13 +44,18 @@
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right"><li>
-                <a href='index.php'>Domů</a>
-            </li><li>
-                <a href='shopping_list.php'>Nákupní seznam</a>
-            </li><li>
-                <a href='stores_management.php'>Obchody</a>
-            </li></ul>        </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href='index.php'>Domů</a>
+                </li>
+                <li>
+                    <a href='shopping_list.php'>Nákupní seznam</a>
+                </li>
+                <li>
+                    <a href='stores_management.php'>Obchody</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
@@ -78,7 +83,10 @@
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <h4>Pracovní zkušenosti</h4>
             <ul>
-                <li>Facebbok (3 roky / 1310 dni)</li><li>Google (5 let / 2125 dni)</li><li>CEZ (6 let / 2379 dni)</li>            </ul>
+                <li>Facebbok (3 roky / 1310 dni)</li>
+                <li>Google (5 let / 2125 dni)</li>
+                <li>CEZ (6 let / 2379 dni)</li>
+            </ul>
         </div>
     </div>
     <div class="row">

@@ -1,3 +1,13 @@
+<?php
+// Pole s definici jednotlivych odkazu v menu
+$pages = [
+    'index' => 'Domů',
+    'shopping_list' => 'Nákupní seznam',
+    'stores_management' => 'Obchody'
+];
+
+?>
+
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header page-scroll">
@@ -5,21 +15,13 @@
                 <span class="sr-only">Menu</span>
                 Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="index.php">Můj první web</a>
+            <!-- Vypsany obecny nazev webu pomoci funkce -->
+            <a class="navbar-brand" href="../../4_web_first_dynamic_content/solution/index.php"><?=getWebTitle()?></a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href='index.php'>Domů</a>
-                </li>
-                <li>
-                    <a href='shopping_list.php'>Nákupní seznam</a>
-                </li>
-                <li>
-                    <a href='stores_management.php'>Obchody</a>
-                </li>
-            </ul>
+            <!-- Nove vypsane menu pomoci funkce -->
+            <?php print getMenu($pages); ?>
         </div>
     </div>
 </nav>

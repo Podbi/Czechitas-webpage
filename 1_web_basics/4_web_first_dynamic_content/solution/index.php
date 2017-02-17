@@ -4,6 +4,9 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+// Pripojeny soubor s obecnymi funkcemi
+include_once 'functions.php';
+
 $title = 'Mgr.';
 $name = 'Boris';
 $lastName = 'Valo';
@@ -12,6 +15,12 @@ $owner = $title . ' ' . $name . ' ' . $lastName;
 
 $about = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet et ex in congue. Nunc ac massa quis orci blandit vehicula a et tortor. Aliquam ullamcorper dolor dolor, nec gravida erat mollis quis. Morbi quam nisi, mollis et rhoncus eleifend, blandit egestas diam. Morbi ac magna malesuada, ultrices sem ut, posuere quam. In hac habitasse platea dictumst. Curabitur ac quam id velit vulputate imperdiet. Vivamus bibendum nibh scelerisque, volutpat augue non, tempor enim. Donec pharetra, nisi nec condimentum efficitur, justo nisl hendrerit mi, at maximus ipsum dolor vel est. Mauris lorem nisl, cursus rhoncus metus id, commodo auctor elit. Vestibulum at ullamcorper dui. Fusce vitae velit vitae sapien convallis laoreet nec lobortis mauris. Vivamus eu gravida velit, sed ultrices lacus. Pellentesque ex nibh, rutrum sed congue eu, auctor non nunc. Donec ac pharetra enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.';
 $showAbout = true;
+
+$workExperiences = array(
+    array('company' => 'Facebbok', 'years' => 3),
+    array('company' => 'Google', 'years' => 1),
+    array('company' => 'CEZ', 'years' => 5),
+);
 
 ?>
 
@@ -36,9 +45,24 @@ $showAbout = true;
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <h4>Pracovní zkušenosti</h4>
             <ul>
-                <li>Facebbok (3 roky / 1310 dni)</li>
-                <li>Google (5 let / 2125 dni)</li>
-                <li>CEZ (6 let / 2379 dni)</li>
+                <?php
+
+                foreach ($workExperiences as $experience) {
+                    $company = $experience['company'];
+                    $years = $experience['years'];
+
+                    if ($years == 1) {
+                        $yearsWord = 'rok';
+                    } elseif ($years >= 2 && $years <= 4) {
+                        $yearsWord = 'roky';
+                    } else {
+                        $yearsWord = 'let';
+                    }
+
+                    echo "<li>$company ($years $yearsWord)</li>";
+                }
+
+                ?>
             </ul>
         </div>
     </div>
