@@ -1,9 +1,9 @@
 Načtení seznamu oblíbených obchodů z JSON souboru
 =================================================
 
-1. Prohlédni si soubor "stores.json" v této složce.
+1. Prohlédni si soubor "``stores.json``" v této složce.
 2. Soubor je ve formátu JSON, což je textový formát pro ukládání a přenos dat používaný nejen na webu. Viz https://www.w3schools.com/js/js_json_intro.asp.
-3. V tomto souboru naleznete "pole" (seznam), ve kterém jsou položky se dvěma vlastnostmi "id" a "name", které reprezentují jednotlivé obchody. Každý obchod má tedy identifkátor a název.
+3. V tomto souboru naleznete "pole" (seznam), ve kterém jsou položky se dvěma vlastnostmi "``id``" a "``name``", které reprezentují jednotlivé obchody. Každý obchod má tedy identifkátor a název.
 4. Uprav svoji webovou stránku tak, abys načetla seznam obchodů ze souboru.
   - Nezapomeň si soubor zkopírovat do svého editoru a co je důležité, **umísti ho do složky "data"**, abys s ním mohla pracovat.
   - Po zkopírování souboru pro jistotu změň oprávnění na 777 tak, že na soubor v editoru klikneš pravým tlačítkem myši vybereš "Permission" a do textového pole vepíšeš 777.
